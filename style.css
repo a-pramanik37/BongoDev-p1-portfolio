@@ -5,17 +5,24 @@
     font-family: sans-serif;
 }
 
+:root {
+    --bg-color: #2F4454;
+    --general-text: white;
+    --special-text: #DA7B93;
+  }
+
 ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
+    color: var(--general-text);
 }
 
 body {
-    background:#DDD0C8;
-    color: rgb(56, 10, 54);
+    background: var(--bg-color);
+    color: var(--general-text);
     width: 83%;
     margin: auto;
 }
@@ -35,9 +42,23 @@ ul {
 }
 
 ul li a {
-    color: white;
+    color: var(--general-text);
 }
 
 .text-design {
-    color: rgb(9, 12, 12);
+    color: var(--special-text);
+}
+
+.resume {
+    border: 2px solid var(--special-text);
+    padding: 10px 20px;
+    margin: 30px 0;
+}
+
+.hero-text, p {
+    margin-bottom: 15px;
+}
+
+#contact {
+    margin-top: 70px;
 }
