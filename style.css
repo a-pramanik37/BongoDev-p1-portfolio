@@ -1,3 +1,43 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background:#DDD0C8;
+    color: rgb(56, 10, 54);
+    width: 83%;
+    margin: auto;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+ul li a {
+    color: white;
+}
+
+.text-design {
+    color: rgb(9, 12, 12);
 }
