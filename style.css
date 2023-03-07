@@ -23,7 +23,7 @@ a {
 body {
     background: var(--bg-color);
     color: var(--general-text);
-    width: 83%;
+    width: 80%;
     margin: auto;
 }
 
@@ -61,4 +61,34 @@ ul li a {
 
 #contact {
     margin-top: 70px;
+}
+
+#hero {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+img {
+    width: 250px;
+}
+
+p {
+    line-height: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-top: 10px;
+}
+
+#footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
