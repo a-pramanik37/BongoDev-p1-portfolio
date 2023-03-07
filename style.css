@@ -20,6 +20,10 @@ a {
     color: var(--general-text);
 }
 
+.logo, a, input, textarea, img, button {
+    cursor: pointer;
+}
+
 body {
     background: var(--bg-color);
     color: var(--general-text);
@@ -49,11 +53,20 @@ ul li a {
     color: var(--special-text);
 }
 
+/* resume start */
 .resume {
     border: 2px solid var(--special-text);
+    border-radius: 10px;
     padding: 10px 20px;
     margin: 30px 0;
 }
+
+.resume:hover{
+    background: var(--special-text);
+    color: black;
+    
+}
+/* resume end */
 
 .hero-text, p {
     margin-bottom: 15px;
@@ -69,8 +82,15 @@ ul li a {
     justify-content: space-between;
 }
 
-img {
-    width: 250px;
+img.hero-image {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 2px var(--special-text);
+}
+
+img.hero-image:hover{
+    width: 315px;
+    box-shadow: 5px 2px var(--general-text);
 }
 
 p {
@@ -80,15 +100,60 @@ p {
 .form {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
-input, textarea {
+/* input, textarea {
     margin-top: 10px;
-}
+} */
 
 #footer {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+ul li a:hover{
+    color: var(--special-text);
+}
+
+.bxs-download {
+    border: 1px solid var(--special-text);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea:hover, input:hover{
+    border: 2px solid var(--special-text);
+    padding: 10px;
+}
+
+::placeholder {
+    padding: 10px;
+}
+
+input, textarea {
+    padding: 5px;
+}
+
+.submit-message {
+    width: 150px;
+    border: 1px solid var(--general-text);
+    border-radius: 0;
+    padding: 15px;
+    box-shadow: 3px 3px var(--special-text);
+    background: black;
+    color: var(--general-text);
+    border-radius: 5px;
+}
+
+.submit-message:hover{
+    color: black;
+    background: var(--special-text);
+    box-shadow: 3px 3px black;
 }
